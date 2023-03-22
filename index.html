@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.estilos.css">
-    <title>Projeto-agua</title>
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon"><!--Imagem de favicon-->
+    <link rel="stylesheet" href="style.estilos.css"><!--estilo css-->
+    <title>Projeto-agua</title> <!--titulo do projeto-->
     </head>
     <body>
         <main> <!--Conteúdo principal-->
@@ -19,19 +19,20 @@
     <div>
         <img src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
         <h1>Água</h1>
-        <form action="cadastro.php" method="post">
+        <form action="cadastro.php" method="post" autocomplete="on">
             <div>
                 <label for="ivalor"></label>Fernando:
-                <input type="number" name="Valor" id="ivalor" required  minlength="2" maxlength="2"  size="2" placeholder="quantos litros">
+                <input type="number" name="Valor" id="ivalor" required  min="0" max="20"  size="10" placeholder="1 a 20litros">
                 <input type="submit" value="Já Enchi">
             </div>
             <div>
                 <label for="ivalor"></label>Sheron:
-                <input type="number" name="valor" id="ivalor" required minlength="2" maxlength="2"  size="2" placeholder="quantos litros">
+                <input type="number" name="valor" id="ivalor" required min="0" max="20"  size="10" placeholder="1 a 20litros"">
                 <input type="submit" value="Já Enchi">
             </div>
             <div>
-                <label for="ivalor"></label>Miguel:<input type="number" name="valor" id="ivalor" required minlength="2" maxlength="2"  size="2" placeholder="quantos litros">
+                <label for="ivalor"></label>Miguel:
+                <input type="number" name="valor" id="ivalor" required min="0" max="20"  size="10" placeholder="1 a 20litros">
                 <input type="submit" value="Já Enchi">
             </div>
       
@@ -43,15 +44,16 @@
         <h1>Ração</h1> 
        
             <div>
-                <label for="ivalor"></label>Fernando:<input type="number" name="valor" id="valor" required minlength="2" maxlength="2"  size="2" placeholder="quantos litros">
+                <label for="ivalor"></label>Fernando:
+                <input type="number" name="valor" id="valor" required min="0" max="20"  size="10" placeholder="Concha">
                 <input type="submit" value="Já Enchi">
             </div>
             <div>
-                <label for="ivalor"></label>Sheron:<input type="number" name="valor" id="valor"required minlength="2" maxlength="2"  size="2" placeholder="quantos litros">
+                <label for="ivalor"></label>Sheron:<input type="number" name="valor" id="valor"required min="0" max="20"  size="10" placeholder="Concha">
                 <input type="submit" value="Já Enchi">
             </div>
             <div>
-                <label for="ivalor"></label>Miguel:<input type="number" name="valor" id="valor" required minlength="2" maxlength="2"  size="2" placeholder="quantos litros">
+                <label for="ivalor"></label>Miguel:<input type="number" name="valor" id="valor" required min="0" max="20"  size="10" placeholder="Concha">
                 <input type="submit" value="Já Enchi">
             </div>
         
@@ -59,7 +61,7 @@
     <hr>
     <div>
         <img src="imagens/levando-galao.96.png" alt="Camelo Galão de Água">
-            <h1>Levar o Galão</h1>
+            <h1>Galão Vazio </h1>
             <div>
                <input type="submit" value="Levar o Galão ">
                 <p>Você vai levar o galão hoje</p> 
@@ -69,7 +71,7 @@
 </form>
     </main>
     <hr>
-    <footer>
+    <footer> <!--Roda pé-->
         <p>Projeto criado por Fernando e Sheron</p>
     </footer>
         
