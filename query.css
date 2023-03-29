@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* telas grandes*/
+
+@media (max-width: 1280px) {
+	
+}
+
+/* taplet*/
+
+@media (max-width: 768px) {
+	
+}
+
+/* Celulares*/
+
+@media (max-width: 425px) {
+	
+}

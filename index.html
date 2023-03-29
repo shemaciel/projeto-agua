@@ -6,74 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon"><!--Imagem de favicon-->
     <link rel="stylesheet" href="style.estilos.css"><!--estilo css-->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="query.css">
     <title>Projeto-agua</title> <!--titulo do projeto-->
     </head>
     <body>
         <main> <!--Conteúdo principal-->
         <header> <!--Cabeçalho-->
-        <div class="titulo" id="titulo">
+        <div class="titulo">
             <h1>Tarefas Diárias</h1> 
         </div> 
         </header>
-        <hr>
-    <div>
+        <hr> <!--Risco na tela-->
+    <div class="titulo">
         <img src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
         <h1>Água</h1>
+        <img src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
+    </div>
+
         <form action="cadastro.php" method="post" autocomplete="on">
-            <div>
-                <label for="ivalor"></label>Fernando:
-                <input type="number" name="Valor" id="ivalor" required  min="0" max="20"  size="10" placeholder="1 a 20litros">
-                <input type="submit" value="Já Enchi">
-            </div>
-            <div>
-                <label for="ivalor"></label>Sheron:
-                <input type="number" name="valor" id="ivalor" required min="0" max="20"  size="10" placeholder="1 a 20litros"">
-                <input type="submit" value="Já Enchi">
-            </div>
-            <div>
-                <label for="ivalor"></label>Miguel:
-                <input type="number" name="valor" id="ivalor" required min="0" max="20"  size="10" placeholder="1 a 20litros">
-                <input type="submit" value="Já Enchi">
-            </div>
-      
+
+            <p>
+                <label for="iquantidadeDeAgua"></label> Fernando:___
+                <input type="number" name="quantidade" id="iquantidade">
+                <button onclick="somarQuantidade()" >Já Enchi</button>
+            </p>
+                <br>
+            <p>
+                <label for="iquantidadeDeAgua"></label> Sheron:___
+                <input type="number" name="quantidadeDeAgua" id="iquantidadeDeAgua">
+                <button onclick="somarQuantidade()">Já Enchi</button>
+            </p>
+             <br>
+            <p>
+                <label for="iquantidadeDeAgua"></label> Miguel:___
+                <input type="number" name="quantidadeDeAgua" id="iquantidadeDeAgua">
+                <button onclick="somarQuantidade()">Já Enchi</button>
+            </p>
+            <br>
     </div>
+
     <hr>
-    <div>
+
+    <div class="titulo">
         <img src="imagens/gato96.png" alt=" Rosto do Gato">
+        <h1>Ração</h1>
         <img src="imagens/ração.96.png" alt="Pode de Ração">
-        <h1>Ração</h1> 
-       
-            <div>
-                <label for="ivalor"></label>Fernando:
-                <input type="number" name="valor" id="valor" required min="0" max="20"  size="10" placeholder="Concha">
-                <input type="submit" value="Já Enchi">
-            </div>
-            <div>
-                <label for="ivalor"></label>Sheron:<input type="number" name="valor" id="valor"required min="0" max="20"  size="10" placeholder="Concha">
-                <input type="submit" value="Já Enchi">
-            </div>
-            <div>
-                <label for="ivalor"></label>Miguel:<input type="number" name="valor" id="valor" required min="0" max="20"  size="10" placeholder="Concha">
-                <input type="submit" value="Já Enchi">
-            </div>
-        
     </div>
+            <p>
+                <label for="iquantidadeDeRacao"></label> Fernando:___
+                <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao" >
+                <button onclick="somarQuanditade()">Já coloquei</button>
+            </p>
+                <br>
+            <p>
+                <label for="iquantidadeDeRacao"></label> Sheron:___
+                <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao">
+                <button onclick="somarQuanditade()">Já coloquei</button>
+            </p>
+            <br>
+            <p>
+                <label for="iquantidadeDeRacao"></label> Miguel:___
+                <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao">
+                <button onclick="somarQuanditade()">Já coloquei</button>
+            </p>
+                <br>
     <hr>
-    <div>
-        <img src="imagens/levando-galao.96.png" alt="Camelo Galão de Água">
+    <div class="titulo">
+        <img src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
             <h1>Galão Vazio </h1>
-            <div>
-               <input type="submit" value="Levar o Galão ">
-                <p>Você vai levar o galão hoje</p> 
-            </div>
-        
+            <img src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
+            <p>
+              
+               <button onclick="somarQuanditade()">Levar o Galão</button>
+            </p>
     </div>
+
 </form>
+
     </main>
+    <br>
     <hr>
+    <br>
     <footer> <!--Roda pé-->
         <p>Projeto criado por Fernando e Sheron</p>
     </footer>
+
+   <script>
+    
+    let iquantidadeDeAgua = 0;
+
+    function somarQuanditade(){
+        const iquantidadeDeAgua = Number(document.getElementById('input-iquantidadeDeAgua'))
+    }
+    
+
+   </script>
+    <script src="ex01.js"></script>
         
     </body>
     </html>

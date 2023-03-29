@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon"><!--Imagem de favicon-->
+    <link rel="stylesheet" href="style.estilos.css"><!--estilo css-->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="query.css">
+    <title>Projeto-agua</title> <!--titulo do projeto-->
+    <style>
+        .agua{
+            display: flex;
+                   }
+
+    </style>
+    </head>
+    <body>
+       
+   
+        <div>
+            <h1>Tarefas Diárias</h1> 
+        </div> 
+        </header>
+       <p>
+           <div class="agua">
+            Fernando: _________ 
+                 <div id="aguaf" ></div>
+                 <input type="number" name="valorf" id="ivalorf">
+
+                 <input type="button" value="Já Enchi" onclick="cheio()">
+           </div>
+       </p>   
+      <script>
+           function cheio(){
+            var fernando = window.document.querySelector('input#ivalorf')
+        //    var res = window.document.querySelector('div#res')
+            var fernando = Number(ivalorf.value)
+           // var saldo = Number(ivalorf.value)
+            var saldo = fernando 
+            var saldo = saldo + fernando
+            aguaf.innerHTML = `${saldo} `
+           }
+      </script>
+    </body>
+    </html>
