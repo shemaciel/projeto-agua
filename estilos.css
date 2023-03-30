@@ -6,7 +6,7 @@ body {
 	margin: 0 auto;
 }
 
-button {
+input .value {
 	background-color: blue;
 	border-radius: 6px;
 }

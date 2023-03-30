@@ -29,19 +29,32 @@
             <p>
                 <label for="iquantidadeDeAgua"></label> Fernando:___
                 <input type="number" name="quantidade" id="iquantidade">
-                <input type="button" value="Já Enchi" onclick="quantidadeDeAgua()">
+                <input type="submit" value="Já Enchi" onclick="quantidadeDeAgua()">
+                <div id="quantidadeArmazenada"></div>
             </p>
+            <script>
+                let quantidadeArmazenada = 0;
+          
+                function somarQuantidade() {
+                  const quantidade = Number(document.getElementById('input-quantidade').value);
+                  const resultado = quantidade + quantidadeArmazenada;
+                  quantidadeArmazenada = resultado;
+                  document.getElementById('output-quantidade').textContent = resultado;
+                }
+              </script>
+
+<!---->
                 <br>
             <p>
                 <label for="iquantidadeDeAgua"></label> Sheron:___
                 <input type="number" name="quantidadeDeAgua" id="iquantidadeDeAgua">
-                <input type="button" value="Já Enchi"onclick="quantidadeDeAgua()">
+                <input type="submit" value="Já Enchi"onclick="quantidadeDeAgua()">
             </p>
              <br>
             <p>
                 <label for="iquantidadeDeAgua"></label> Miguel:___
                 <input type="number" name="quantidadeDeAgua" id="iquantidadeDeAgua">
-                <input type="button" value="Já Enchi"onclick="quantidadeDeAgua()">
+                <input type="submit" value="Já Enchi"onclick="quantidadeDeAgua()">
             </p>
             <br>
     </div>
@@ -56,19 +69,19 @@
             <p>
                 <label for="iquantidadeDeRacao"></label> Fernando:___
                 <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao" >
-                <input taype="button" value="Já coloquei" onclick="iquantidadeDeRacao()">
+                <input taype="submit" value="Já coloquei" onclick="iquantidadeDeRacao()">
             </p>
                 <br>
             <p>
                 <label for="iquantidadeDeRacao"></label> Sheron:___
                 <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao">
-                <input taype="button" value="Já coloquei" onclick="iquantidadeDeRacao()">
+                <input taype="submit" value="Já coloquei" onclick="iquantidadeDeRacao()">
             </p>
             <br>
             <p>
                 <label for="iquantidadeDeRacao"></label> Miguel:___
                 <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao">
-                <input taype="button" value="Já coloquei" onclick="iquantidadeDeRacao()">
+                <input taype="submit" value="Já coloquei" onclick="iquantidadeDeRacao()">
             </p>
                 <br>
     <hr>
@@ -94,16 +107,8 @@
 
    <script>
     
-    
-    let iquantidadeDeAgua = 0;
-    let iguantidadeDeRacao = 0;
-
-    function somarQuanditade(){
-        let iquantidadeDeAgua = Number(document.getElementById('input-iquantidadeDeAgua'))
-    }
-    
-
    </script>
+   
     <script src="ex01.js"></script>
         
     </body>
