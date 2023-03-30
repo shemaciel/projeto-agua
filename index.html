@@ -24,24 +24,17 @@
         <img src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
     </div>
 
-        <form action="cadastro.php" method="post" autocomplete="on">
-
+        <form  action="cadastro.php" method="post" autocomplete="on">
+        <div class="botaof"></div>
             <p>
-                <label for="iquantidadeDeAgua"></label> Fernando:___
-                <input type="number" name="quantidade" id="iquantidade">
-                <input type="submit" value="Já Enchi" onclick="quantidadeDeAgua()">
-                <div id="quantidadeArmazenada"></div>
-            </p>
-            <script>
-                let quantidadeArmazenada = 0;
-          
-                function somarQuantidade() {
-                  const quantidade = Number(document.getElementById('input-quantidade').value);
-                  const resultado = quantidade + quantidadeArmazenada;
-                  quantidadeArmazenada = resultado;
-                  document.getElementById('output-quantidade').textContent = resultado;
-                }
-              </script>
+            <label for="iquantidadeDeAgua"></label> Fernando:___
+            <input type="number" name="quantidade1" id="iquantidadeDeAgua1">
+            <input type="number" name="quantidade2" id="iquantidadeDeAgua2">
+            <input type="submit" value="Já Enchi" onclick="quantidadeDeAgua()">
+                <div id="quantidadeArmazenada">Litros</div>
+        </p>
+        </div>
+           
 
 <!---->
                 <br>
@@ -106,9 +99,24 @@
     </footer>
 
    <script>
-    
+
+     
+      function quantidadeDeAgua(){
+        var af1 = window.document.querySelector('input#iquantidadeDeAgua1')
+        var af2 = window.document.querySelector('input#iquantidadeDeAgua2')
+        var quantidadeArmazenada = window.document.getElementById('input#quantidadeArmazenada')
+        var f1 = Number(afn1.value)
+        var f2 = Number(afn2.value)
+        var s = f1 + f2
+        quantidadeArmazenada.innerHTML = s
+
+
+      }
+
+
    </script>
-   
+ 
+
     <script src="ex01.js"></script>
         
     </body>
