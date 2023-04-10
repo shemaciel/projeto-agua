@@ -20,6 +20,10 @@
 h1, p {
 	text-align: center;
 }
+input {
+	background-color:#CCCCCC;
+	border-radius: 6px;
+}
 
 .galao1 {
 	float: right
@@ -43,6 +47,7 @@ h1, p {
 	background-color:#805959;
 }
 img {
+	border: #CCCCCC;
 	border-radius: 12px;
 }
 button{
