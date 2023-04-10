@@ -18,101 +18,77 @@
         </div> 
         </header>
         <hr> <!--Risco na tela-->
-    <div class="titulo">
-        <img src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
+    <div class="primeiro">
         <h1>Água</h1>
-        <img src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
-    </div>
+        <img class="galao1" src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
+        <img class="galao2" src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
 
-        <form  action="cadastro.php" method="post" autocomplete="on">
-        <div class="botaof"></div>
+        <form>
             <p>
-            <label for="iquantidadeDeAgua"></label> Fernando:___
-            <input type="number" name="quantidade1" id="iquantidadeDeAgua1">
-            <input type="number" name="quantidade2" id="iquantidadeDeAgua2">
+            <label for="iquantidadeDeAgua"></label> Fernando:
+            <input type="number" name=quantidadeDeAgua id="iquantidadeDeAgua">
             <input type="submit" value="Já Enchi" onclick="quantidadeDeAgua()">
-                <div id="quantidadeArmazenada">Litros</div>
         </p>
-        </div>
-           
-
-<!---->
                 <br>
             <p>
-                <label for="iquantidadeDeAgua"></label> Sheron:___
+                <label for="iquantidadeDeAgua"></label> Sheron:
                 <input type="number" name="quantidadeDeAgua" id="iquantidadeDeAgua">
-                <input type="submit" value="Já Enchi"onclick="quantidadeDeAgua()">
-            </p>
+                <input type="submit" value="Já Enchi" onclick="quantidadeDeAgua()">
+        </p>
              <br>
             <p>
-                <label for="iquantidadeDeAgua"></label> Miguel:___
+                <label for="iquantidadeDeAgua"></label> Miguel:
                 <input type="number" name="quantidadeDeAgua" id="iquantidadeDeAgua">
-                <input type="submit" value="Já Enchi"onclick="quantidadeDeAgua()">
-            </p>
+                <input type="submit" value="Já Enchi" onclick="quantidadeDeAgua()">
+        </p>
             <br>
     </div>
-
     <hr>
-
-    <div class="titulo">
-        <img src="imagens/gato96.png" alt=" Rosto do Gato">
+    <div class="segundo">
         <h1>Ração</h1>
-        <img src="imagens/ração.96.png" alt="Pode de Ração">
-    </div>
+        <img class="gato" src="imagens/gato96.png" alt=" Rosto do Gato">
+        <img  class="racao" src="imagens/ração.96.png" alt="Pode de Ração">
             <p>
-                <label for="iquantidadeDeRacao"></label> Fernando:___
+                <label for="iquantidadeDeRacao"></label> Fernando:
                 <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao" >
                 <input taype="submit" value="Já coloquei" onclick="iquantidadeDeRacao()">
-            </p>
+        </p>
                 <br>
             <p>
-                <label for="iquantidadeDeRacao"></label> Sheron:___
+                <label for="iquantidadeDeRacao"></label> Sheron:
                 <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao">
                 <input taype="submit" value="Já coloquei" onclick="iquantidadeDeRacao()">
-            </p>
+        </p>
             <br>
             <p>
-                <label for="iquantidadeDeRacao"></label> Miguel:___
+                <label for="iquantidadeDeRacao"></label> Miguel:
                 <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao">
                 <input taype="submit" value="Já coloquei" onclick="iquantidadeDeRacao()">
-            </p>
+        </p>
                 <br>
+    </div>
     <hr>
-    <div class="titulo">
+    <div class="terceiro">
+        <h1>Galão Vazio</h1>
+        <img  class="camelo" src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
         <img src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
-            <h1>Galão Vazio </h1>
-            <img src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
             <p>
               
-               <button onclick="somarQuanditade()">Levar o Galão</button>
+               <button>Levar o Galão</button>
             </p>
     </div>
-
 </form>
-
     </main>
-    <br>
-    <hr>
-    <br>
     <footer> <!--Roda pé-->
-        <p>Projeto criado por Fernando e Sheron</p>
+        <div id="podaPe">
+            Projeto criado por <a href="https://www.instagram.com/shemaciel/" target="_blank" rel="external">@Sheron</a> e <a href="https://www.instagram.com/fernandochristofoli/" target="_blank" rel="external">@Fernando</a>
+        </div>
     </footer>
 
    <script>
 
      
-      function quantidadeDeAgua(){
-        var af1 = window.document.querySelector('input#iquantidadeDeAgua1')
-        var af2 = window.document.querySelector('input#iquantidadeDeAgua2')
-        var quantidadeArmazenada = window.document.getElementById('input#quantidadeArmazenada')
-        var f1 = Number(afn1.value)
-        var f2 = Number(afn2.value)
-        var s = f1 + f2
-        quantidadeArmazenada.innerHTML = s
-
-
-      }
-
+      
 
    </script>
  

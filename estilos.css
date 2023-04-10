@@ -1,14 +1,65 @@
 @charset "UTF-8";
 
-body {
+.body {
 	font-family: Arial, Helvetica, sans-serif;
 	max-width: 1280px;
 	margin: 0 auto;
+	color: #BFBFBF
+	#FFB3B3
+	#FFFFFF
+	#805959
+	#CCCCCC
+	rgb(28, 240, 28)
 }
 
-input .value {
-	background-color: blue;
-	border-radius: 6px;
+.titulo {
+	background-color: #BFBFBF;
+	text-align: center;
 }
+
+h1, p {
+	text-align: center;
+}
+
+.galao1 {
+	float: right
+}
+
+.gato {
+	float: right
+}
+
+.camelo {
+	float: right
+}
+
+.primeiro{
+	background-color:	#FFB3B3;
+}
+.segundo{
+	background-color:#CCCCCC;
+}
+.terceiro{
+	background-color:#805959;
+}
+img {
+	border-radius: 12px;
+}
+button{
+	background-color: rgb(28, 240, 28);
+	border-radius: 6px;
+	border:  12px solid transparent;
+	margin-bottom: 20px;
+	
+}
+footer, div.rodaPe {
+
+	background-color:black;
+	color: #BFBFBF;
+	font-size: 12px;
+
+}
+
+
 
 
