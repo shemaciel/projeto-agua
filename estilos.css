@@ -51,12 +51,21 @@ img {
 	border-radius: 12px;
 }
 button{
-	background-color: rgb(28, 240, 28);
+	background-color: rgb(10, 124, 10);
+	
 	border-radius: 6px;
 	border:  12px solid transparent;
 	margin-bottom: 20px;
+	cursor: pointer;
+	font-size: 25px;
 	
 }
+button:hover{
+	background-color: rgb(28, 240, 28);
+
+
+}
+
 footer, div.rodaPe {
 
 	background-color:black;
