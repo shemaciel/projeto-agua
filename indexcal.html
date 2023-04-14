@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade</title>
+</head>
+<body>
+    <label for="">Idade</label>
+    <input type="number" name="anoNasc" id="ianoNasc">
+   
+    <input type="button" value="ok" onclick="saber()">
+    <samp id="qual">Sua idade é: </samp>
+
+    <script>
+
+        //let nasceu = 0;
+        let atual = 2023;
+
+        function saber(){
+    let n1 = Number(document.getElementById('ianoNasc').value);
+    //let a1 = Number(document.getElementById('ianoAtu').value);
+    let resposta = atual - n1
+ 
+     document.getElementById("qual").innerHTML = resposta
+
+        }
+
+    </script>
+    
+</body>
+</html>

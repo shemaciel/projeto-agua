@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+
+        
+        .header,h1 {
+              margin-left: 30%;
+              margin-bottom: 1px;
+              width: 50vw;
+              background-color: black;
+              color: white;
+              text-align: center;
+              font-size: 40px;
+              border-radius: 6px;
+         }
+         
+         .caixa1 {
+          margin-left: 30%;
+          width: 50vw;
+          height: 80px;
+          border-radius: 6px;
+          background-color:rgb(172, 172, 234);
+          
+  
+         }
+         .caixa2 {
+          margin-left: 30%;
+          width: 50vw;
+          height: 80px;
+          border-radius: 6px;
+          background-color:rgb(216, 99, 122);
+       
+  
+  
+         }
+         .caixa3 {
+          margin-left: 30%;
+          width: 50vw;
+          height: 80px;
+          border-radius: 6px;
+          background-color:rgb(164, 216, 216);
+  
+         }
+  
+          h2 {
+              margin-left: 40%;
+              background-color:blue;
+              color: white;
+              text-align: center;
+              font-size: 25px;
+              border-radius: 6px;
+              width: 75px;
+              height: 50px;
+              padding: 10px;
+         }
+  
+         p {
+              margin-left: 50%;
+              background-color:crimson;
+              color: white;
+              text-align: center;
+              font-size: 25px;
+              border-radius: 6px;
+              width: 75px;
+              height: 50px;
+              padding: 10px;
+  
+         }
+         p#quantidade  {
+              
+              background-color:aqua;
+              color: white;
+              text-align: center;
+              font-size: 25px;
+              border-radius: 6px;
+              width: 75px;
+              height: 50px;
+              padding: 10px;
+  
+         } 
+                     
+  
+      </style>
+      </head>
+      <body>
+              <header>
+              <h1>Tarefas Diárias</h1> 
+          </header>
+          
+          <main>
+  
+              <div class="caixa1">
+                  
+                  <p id="valor"></p>
+              
+          </div>
+  
+              <div class="caixa2">
+              <h2 id="numero"></h2>
+              
+          </div>
+  
+              <div class="caixa3">
+              <p id="quantidade"></p>
+              <input type="button" value="Somar" onclick="xxx()">
+              <input type="number" id="qnt">
+  
+          </div>
+          
+  
+  
+      </main>
+  
+              <script>
+                  let quantidadeDeAgua = 0;
+                  let numeroDeAgua = 0;
+                  let quantidade = 0;
+                 let armazenado = 0;
+  
+                  
+                 document.getElementById("numero").innerHTML = numeroDeAgua;
+                 document.getElementById("quantidade").innerHTML = quantidade;
+  
+      function xxx(){
+          
+          let qntInput =  Number(document.getElementById('qnt').value);
+          let res =  qntInput + armazenado;
+          armazenado = res;
+          document.getElementById("valor").innerHTML = res ;
+  
+          
+         
+                     
+                 
+  
+  
+  
+                     
+  
+  
+                     
+                     
+                  }
+                  
+  
+              </script>
+</body>
+</html>

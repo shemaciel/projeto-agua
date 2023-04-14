@@ -27,7 +27,7 @@
        .caixa1 {
         margin-left: 30%;
         width: 50vw;
-        height: 50px;
+        height: 80px;
         border-radius: 6px;
         background-color:rgb(172, 172, 234);
         
@@ -36,7 +36,7 @@
        .caixa2 {
         margin-left: 30%;
         width: 50vw;
-        height: 50px;
+        height: 80px;
         border-radius: 6px;
         background-color:rgb(216, 99, 122);
      
@@ -46,7 +46,7 @@
        .caixa3 {
         margin-left: 30%;
         width: 50vw;
-        height: 50px;
+        height: 80px;
         border-radius: 6px;
         background-color:rgb(164, 216, 216);
 
@@ -98,37 +98,47 @@
         </header>
         
         <main>
-
             <div class="caixa1">
-            <p id="valor"></p>
+                <p id="valor"></p>
         </div>
-
             <div class="caixa2">
             <h2 id="numero"></h2>
         </div>
-
             <div class="caixa3">
             <p id="quantidade"></p>
+            <input type="button" value="Somar" onclick="xxx()">
+            <input type="number" id="qnt">
         </div>
-
     </main>
-
             <script>
-                let quantidadeDeAgua = 21;
-                let numeroDeAgua = 2;
-                let quantidade = 5;
-                
+               // let quantidadeDeAgua = 0;
+               // let numeroDeAgua = 0;
+               // let quantidade = 0;
+
+               let armazenado = 0;
+               document.getElementById("numero").innerHTML = numeroDeAgua;
+               document.getElementById("quantidade").innerHTML = quantidade;
+               
+    function xxx(){
+        let qntInput =  Number(document.getElementById('qnt').value);
+        let res =  qntInput + armazenado;
+        armazenado = res;
+        document.getElementById("valor").innerHTML = res ;
+
+
+       
+                   
                
 
 
-                document.getElementById("valor").innerHTML = quantidadeDeAgua;
-                document.getElementById("numero").innerHTML = numeroDeAgua;
-                document.getElementById("quantidade").innerHTML = quantidade;
+
+                   
 
 
+                   
+                   
+                }
                 
-
-
 
             </script>
 

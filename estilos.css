@@ -11,14 +11,25 @@
 	#CCCCCC
 	rgb(28, 240, 28)
 }
+main {
+	
+
+	
+}
 
 .titulo {
 	background-color: #BFBFBF;
-	text-align: center;
+	margin-left: 25%;
+	padding: 5px;
+    width: 50%;
+    height: 27%;
+    border-radius: 6px;
+	text-align:center;
 }
 
 h1, p {
 	text-align: center;
+	padding-bottom: 10px;
 }
 input {
 	background-color:#CCCCCC;
@@ -39,25 +50,54 @@ input {
 
 .primeiro{
 	background-color:	#FFB3B3;
+	margin-left: 25%;
+	padding: 5px;
+    width: 50%;
+    height: 27%;
+    border-radius: 6px ;
+	text-align:center;
+   
 }
 .segundo{
 	background-color:#CCCCCC;
+	margin-left: 25%;
+	padding: 5px;
+    width: 50%;
+    height: 27%;
+    border-radius: 6px;
+	text-align:center;
+	
 }
 .terceiro{
 	background-color:#805959;
+	margin-left: 25%;
+	padding: 5px;
+    width: 50%;
+    height: 27%;
+    border-radius: 6px ;
+	text-align:center;
+
+}
+
+.foto{
+	padding-bottom: px;
+
 }
 img {
 	border: #CCCCCC;
-	border-radius: 12px;
+	border-radius: 20%;
+	padding-bottom: px;
+
+	
 }
+
 button{
 	background-color: rgb(10, 124, 10);
-	
 	border-radius: 6px;
 	border:  12px solid transparent;
 	margin-bottom: 20px;
 	cursor: pointer;
-	font-size: 25px;
+	font-size: 20px;
 	
 }
 button:hover{
@@ -71,6 +111,12 @@ footer, div.rodaPe {
 	background-color:black;
 	color: #BFBFBF;
 	font-size: 12px;
+	margin-left: 25%;
+	padding: 5px;
+    width: 50%;
+    height: 27%;
+    border-radius: 6px;
+	
 
 }
 

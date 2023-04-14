@@ -11,92 +11,99 @@
     <title>Projeto-agua</title> <!--titulo do projeto-->
     </head>
     <body>
-        <main> <!--Conteúdo principal-->
-        <header> <!--Cabeçalho-->
+    <main>
+    <header>
         <div class="titulo">
             <h1>Tarefas Diárias</h1> 
         </div> 
         </header>
-        <hr> <!--Risco na tela-->
     <div class="primeiro">
         <h1>Água</h1>
-        <img class="galao1" src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
-        <img class="galao2" src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
-
+    <div class="foto">       
+        <img src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
+        <img src="imagens/galao.96.png" alt="Galão de Água de 20 Litros">
+    </div>
+        <br>
+        
         <form>
-            <p>
-            <label for="iquantidadeDeAgua"></label> Fernando:
-            <input type="number" name=quantidadeDeAgua1 id="iquantidadeDeAgua">
-            <input type="submit" value="Já Enchi" onclick="somarQuantidadeDeAgua()">
-        </p>
-        <p id="quantidade">Resultado: </p>
+            <div>
+                <label for="iquantidadeDeAguaF">Fernando:</label> 
+                <input type="number" id="iquantidadeDeAguaF">
+                <input type="button" value="Já Enchi" onclick="AguaF()">
+                <span id="quantidadeF">Litros:</span>
+            </div>
                 <br>
-            <p>
-                <label for="iquantidadeDeAgua"></label> Sheron:
-                <input type="number" name="quantidadeDeAgua" id="iquantidadeDeAgua">
-                <input type="submit" value="Já Enchi" onclick="quantidadeDeAgua()">
-        </p>
+            <div>
+                <label for="iquantidadeDeAguaS">Sheron:</label> 
+                <input type="number"  id="iquantidadeDeAguaS">
+                <input type="button" value="Já Enchi" onclick="AguaS()">
+                <span id="quantidadeS">litros:<span>
+            </div>
              <br>
-            <p>
-                <label for="iquantidadeDeAgua"></label> Miguel:
-                <input type="number" name="quantidadeDeAgua" id="iquantidadeDeAgua">
-                <input type="submit" value="Já Enchi" onclick="quantidadeDeAgua()">
-        </p>
+            <div>
+                <label for="iquantidadeDeAguaM">Miguel:</label>
+                <input type="number" id="iquantidadeDeAguaM">
+                <input type="button" value="Já Enchi" onclick="AguaM()">
+                <span id="quantidadeM">Litros:</sapa>
+            </div>
             <br>
     </div>
-    <hr>
-    <div class="segundo">
+
+   <div class="segundo">
+    
         <h1>Ração</h1>
-        <img class="gato" src="imagens/gato96.png" alt=" Rosto do Gato">
-        <img  class="racao" src="imagens/ração.96.png" alt="Pode de Ração">
-            <p>
-            <label for="iquantidadeDeRacao"></label> Fernando:
-            <input type="number" name=quantidadeDeRacao id="iquantidadeDeRacao">
-            <input type="submit" value="Já coloquei" onclick="quantidadeDeAgua()">
-        </p>
+    <div class="foto">
+        <img src="imagens/gato96.png" alt=" Rosto do Gato">
+        <img src="imagens/ração.96.png" alt="Pode de Ração">
+    </div>
+     <br>
+            <div>
+            <label for="iquantidadeDeRacaoF">Fernando:</label> 
+            <input type="number" id="iquantidadeDeRacaoF">
+            <input type="submit" value="Já coloquei" onclick="RacaoF()">
+            <span id="cheioF">Qnt:</sapa>
+        </div>
                 <br>
-            <p>
-                <label for="iquantidadeDeRacao"></label> Sheron:
-                <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao">
-                <input type="submit" value="Já coloquei" onclick="iquantidadeDeRacao()">
-        </p>
+            <div>
+                <label for="iquantidadeDeRacaoS">Sheron:</label> 
+                <input type="number" id="iquantidadeDeRacaoS">
+                <input type="submit" value="Já coloquei" onclick="RacaoS()">
+                <span id="cheioS">Qnt:</sapa>
+        </div>
             <br>
-            <p>
-                <label for="iquantidadeDeRacao"></label> Miguel:
-                <input type="number" name="quantidadeDeRacao" id="iquantidadeDeRacao">
-                <input type="submit" value="Já coloquei" onclick="iquantidadeDeRacao()">
-        </p>
+            <div>
+                <label for="iquantidadeDeRacaoM">Miguel:</label> 
+                <input type="number" id="iquantidadeDeRacaoM">
+                <input type="submit" value="Já coloquei" onclick="RacaoM()">
+                <span id="cheioM">Qnt:</sapa>
+
+        </div>
                 <br>
     </div>
-    <hr>
+
     <div class="terceiro">
+        
         <h1>Galão Vazio</h1>
-        <img  class="camelo" src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
-        <img src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
-            <p>
-              
+        
+     <div class="foto">
+            <img  src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
+            <img src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
+        </div>
+        <br>
+            <div>
                <button>Levar o Galão</button>
-            </p>
+               <span id="">Pronto!:</sapa>
+            </div>
     </div>
 </form>
     </main>
-    <footer> <!--Roda pé-->
+    <footer>
         <div id="podaPe">
             Projeto criado por <a href="https://www.instagram.com/shemaciel/" target="_blank" rel="external">@Sheron</a> e <a href="https://www.instagram.com/fernandochristofoli/" target="_blank" rel="external">@Fernando.</a>
 
         </div>
     </footer>
-
-   <script>
     
-   
-
-     
-      
-
-   </script>
- 
-
     <script src="ex01.js"></script>
         
     </body>
