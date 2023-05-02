@@ -4,12 +4,14 @@
 	font-family: Arial, Helvetica, sans-serif;
 	max-width: 1280px;
 	margin: 0 auto;
-	color: #BFBFBF
-	#FFB3B3
-	#FFFFFF
-	#805959
-	#CCCCCC
-	rgb(28, 240, 28)
+	color: 	#BFBFBF
+			#c59292
+			#FFB3B3
+			#FFFFFF
+			#805959
+			#CCCCCC
+			rgb(28, 240, 28)
+			rgb(10, 124, 10);
 }
 main {
 	
@@ -70,6 +72,16 @@ input {
 }
 .terceiro{
 	background-color:#805959;
+	margin-left: 25%;
+	padding: 5px;
+    width: 50%;
+    height: 27%;
+    border-radius: 6px ;
+	text-align:center;
+
+}
+.quarto {
+	background-color:#c59292;
 	margin-left: 25%;
 	padding: 5px;
     width: 50%;
