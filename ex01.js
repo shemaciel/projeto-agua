@@ -29,10 +29,10 @@ let colocado2 = 0;
     }
     function ResumoA(){
         let maiorn = Math.max(resultado, resultado1, resultado2);  
-        console.log(resultado);
+        document.getElementById(resultado);
         let menorn = Math.min(resultado, resultado1, resultado2);
-      //  document.getElementById("maior").value = maiorn;
-	//  document.getElementById("menor").value = menorn;
+        document.getElementById("maior".value) = maiorn;
+	    document.getElementById("menor".value) = menorn;
     }
 
 
