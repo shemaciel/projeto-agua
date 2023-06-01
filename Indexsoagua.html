@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!--brasil-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon"><!-- favicon-->
+   <!--estilo css tamanhos-->
+  <title>Água</title> <!--estilo css -->
+</head> 
+<style>
+  * { 
+    margin: 0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    
+  }
+  div {
+    text-align:center
+    
+    
+  }
+  main{
+    background-color: antiquewhite;
+  }
+  .um{
+    background-color: aqua;
+    width:-50% ;
+    height:40% ;
+    
+    
+   }
+   .dois{
+    background-color:crimson;
+    width:-50% ;
+    height:40% ;
+    
+   }
+   .tres{
+    background-color:cadetblue;
+    width:-50% ;
+    height:40% ;
+    
+   }
+  footer {
+    background-color:black;
+    color: #BFBFBF;
+    font-size: 12px;
+    margin-left: 25%;
+    padding: 5px;
+    width: 50%;
+    height: 40%;
+    border-radius: 6px;
+    
+  }
+
+
+
+</style>
+  <body>
+ 
+  <header><!--cabrcario, conteúdo introdutorio-->
+  <h1>Tarefa Diária</h1>
+</header>
+
+<main> <!--conteudo principal-->
+  <p>Quem enche as garrafas de água preenchaaqui!</p>
+
+  <img src="imagens/galao.96.png" alt="Galão de agua azul">
+
+    <p class="um">Fernando:<input type="number" name="aguaFer" id="aguaFer">
+    <samp id="qtn1"></samp> litros!
+    <input type="button" value="Cheio" onclick="enchendoFer()">
+    <br>
+    <samp id="uD1"></samp>, foi o ultimo número digitado; 
+    <br>
+    <samp id="uS1"></samp>, foi o ultimo saldo;
+    </p>
+
+    <p class="dois">Sheron:<input type="number" name="aguaShe" id="aguaShe">
+    <samp id="qnt2"></samp> litros!
+    <input type="button" value="Cheio" onclick="enchendoShe()">
+    <br>
+    <samp id="uD2"></samp>, foi o ultimo número digitado;
+    <br>
+    <samp id="uS2"></samp>,foi o ultimo saldo;
+    </p>
+
+    <p class="tres">Miguel:<input type="number" name="aguaMig" id="aguaMig">
+    <samp id="qnt3"></samp>litros!
+    <input type="button" value="Cheio" onclick="enchendoMig()">
+    <br>
+    <samp id="uD3"></samp>, foi o ultimo número digitado; 
+    <br>
+    <samp id="uS3"></samp>, foi o ultimo saldo;
+    </p>
+
+</main> 
+<footer><!--roda pé-->
+  
+<P>Criado por Sheron</P>
+
+</footer>
+<script>
+
+let saldo = 0;
+let saldo1 = 0;
+let saldo2 = 0;
+
+function enchendoFer(){
+  let armazenar = 0;
+  let digitado = 0;
+
+  digitado = Number(document.getElementById("aguaFer").value);
+  armazenar = digitado + saldo;
+  saldo = armazenar;
+
+  document.getElementById("qtn1").innerHTML = saldo;
+  document.getElementById("uD1").innerHTML = digitado;
+  document.getElementById("uS1").innerHTML = armazenar;
+  
+ console.log(digitado)
+ console.log(armazenar)
+ console.log(saldo)
+
+}
+
+function enchendoShe(){
+let armazenar1 = 0;
+let digitado1 = 0;
+
+digitado1 = Number(document.getElementById("aguaShe").value);
+armazenar1 = digitado1 + saldo1;
+saldo1 = armazenar1;
+
+document.getElementById("qnt2").innerHTML = saldo1;
+document.getElementById("uD2").innerHTML = digitado1;
+document.getElementById("uS2").innerHTML = armazenar1;
+
+console.log(digitado1)
+console.log(armazenar1)
+console.log(saldo1)
+
+}
+
+function enchendoMig() {
+
+  let digitado2 = 0;
+  let armaenar2 = 0;
+
+  digitado2 = Number(document.getElementById("aguaMig").value);
+  armazenar2 = digitado2 + saldo2;
+  saldo2 = armazenar2;
+
+ document.getElementById("qnt3").innerHTML = saldo2;
+ document.getElementById("uD3").innerHTML = digitado2;
+ document.getElementById("uS3").innerHTML = armazenar2;
+
+  console.log(digitado2)
+  console.log(armazenar2)
+  console.log(saldo2)
+
+}
+
+</script>
+
+  
+</body>
+</html>

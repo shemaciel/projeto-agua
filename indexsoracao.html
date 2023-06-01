@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+  <title>Ração</title>
+</head>
+<body>
+  <header></header>
+  <h1>Tarefa Diária</h1>
+</header>
+<main></main>
+
+<p>
+  Quem vai colocar a ração pro Tekila preenche aqui!
+</p>
+
+<img src="imagens/ração.96.png" alt="Pode de ração cheio ">
+
+
+<p class="um">
+  Fernando: <input type="number" name="racaoFer" id="racaoFer">
+  <span id="qnt1"></span>
+  <input type="button" value="Cheio" onclick="quantidade()"> 
+</p>
+
+
+
+<p class="dois">
+  Sheron: <input type="number" name="racaoShe" id="racaoShe">
+  <samp id="qnt2"></samp>
+  <input type="button" value="Cheio" onclick="quantidade()">
+</p>
+
+
+
+<p class="tres" >
+  Miguel: <input type="number" name="racaoMig" id="racaoMig">
+  <samp id="qnt3"></samp>
+  <input type="button" value="Cheio" onclick="quantidade()">
+</p>
+
+</main> 
+
+  <footer>
+    Criado por Sheron
+  </footer>
+
+  <script>
+    let valorFinalFer = 0;
+    let valorFinalShe = 0;
+    let valorFinalMig = 0;
+
+     function quantidade(){
+
+      numDigitadoFer = Number(window.document.getElementById("racaoFer").value);
+
+      armazenadoFer = numDigitadoFer + valorFinalFer; 
+
+      valorFinalFer = armazenadoFer;
+
+      window.document.getElementById("qnt1").innerHTML = valorFinalFer;
+
+     }
+
+     function quantidade(){
+
+      numDigitadoShe = Number(window.document.getElementById("racaoShe").value); 
+      armazenadoShe = numDigitadoShe + valorFinalShe;
+      valorFinalShe = armazenadoShe;
+
+      window.document.getElementById("qnt2").innerHTML = valorFinalShe
+
+     }
+
+     function quantidade(){
+
+      numDigitadoMig = Number(window.document.getElementById("racaoMig").value);
+      armazenadoMig =  numDigitadoMig + valorFinalMig;
+      valorFinalMig = armazenadoMig;
+
+      window.document.getElementById("qnt3").innerHTML = valorFinalMig;
+
+     }
+
+
+
+     
+  </script>
+
+</body>
+</html>
+  
+
