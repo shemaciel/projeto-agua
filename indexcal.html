@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Idade</title>
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+    <title>Louça</title>
 </head>
 <body>
-    <label for="">Idade</label>
-    <input type="number" name="anoNasc" id="ianoNasc">
-   
-    <input type="button" value="ok" onclick="saber()">
-    <samp id="qual">Sua idade é: </samp>
+        <h1>Tarefa diaria</h1>
+        <h2>Cronograma de lavar louças</h2>
+
+        <p>
+            Miguel:
+            <input type="number" name="inpLaveiM" id="inpLaveiM">
+           <input type="button" value="lavada" onclick="descobrirM()">
+            <span id="jaLavadaM"></span>
+        </p>
+
+        <p>
+            Fernando: 
+            <input type="number" name="inpLaveiF" id="inpLaveiF">
+            <input type="button" value="lavada" onclick="descobrirF()">
+            <span in="JaLavadaF"></span>
+        </p>
 
     <script>
+        
+        let  restFinalM = 0;
+        let restFinalF = 0;
 
-        //let nasceu = 0;
-        let atual = 2023;
+    function descobrirM() {
+        inpDigitadoM = Number( window.document.getElementById("inpLaveiM").value);
+        numArmazenadoM = inpDigitadoM + restFinalM;
+        restFinalM = numArmazenadoM;
 
-        function saber(){
-    let n1 = Number(document.getElementById('ianoNasc').value);
-    //let a1 = Number(document.getElementById('ianoAtu').value);
-    let resposta = atual - n1
- 
-     document.getElementById("qual").innerHTML = resposta
+    window.document.getElementById("jaLavadaM").innerHTML = restFinalM;
 
-        }
+        console.log(numArmazenadoM);
+        console.log(restFinalM);
+        console.log(inpDigitadoM);
 
-       
+    }
 
+    function descobrirF() {
+        inpDigitadoF = Number(window.document.getElementById("inpLaveiF").value);
+        numArmazenandoF = inpDigitadoF + restFinalF;
+        restFinalF = numArmazenandoF;
+        window.document.getElementById("jaLavadaF").innerHTML = restFinalF
+
+    
+        console.log(numArmazenadoF);
+        console.log(restFinalF);
+        console.log(inpDigitadoF);
+    }
 
 
     </script>
