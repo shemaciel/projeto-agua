@@ -14,33 +14,35 @@
 <main></main>
 
 <p>
-  Quem vai colocar a ração pro Tekila preenche aqui!
+  Quem vai colocar a ração pro Tekila !
 </p>
 
 <img src="imagens/ração.96.png" alt="Pode de ração cheio ">
 
-
 <p class="um">
   Fernando: <input type="number" name="racaoFer" id="racaoFer">
   <span id="qnt1"></span>
-  <input type="button" value="Cheio" onclick="quantidade()"> 
+  <input type="button" value="Cheio" onclick="quantidadeFer()"> 
+  Ultimo numero digitado: <span id="numeroDigitadoF"></span>
 </p>
-
-
 
 <p class="dois">
   Sheron: <input type="number" name="racaoShe" id="racaoShe">
-  <samp id="qnt2"></samp>
-  <input type="button" value="Cheio" onclick="quantidade()">
+  <span id="qnt2"></span>
+  <input type="button" value="Cheio" onclick="quantidadeShe()">
+  Ultimo numero digitado: <span id="numeroDigitadoS"></span>
 </p>
 
-
-
-<p class="tres" >
+<p class="tres">
   Miguel: <input type="number" name="racaoMig" id="racaoMig">
-  <samp id="qnt3"></samp>
-  <input type="button" value="Cheio" onclick="quantidade()">
+  <span id="qnt3"></span>
+  <input type="button" value="Cheio" onclick="quantidadeMig()">
+  Ultimo numero digitado: <span id="numeroDigitadoM"></span>
 </p>
+
+<input type="button" value="Você" onclick="colocar()">
+<span id="colocou"></span>
+
 
 </main> 
 
@@ -53,37 +55,70 @@
     let valorFinalShe = 0;
     let valorFinalMig = 0;
 
-     function quantidade(){
+     function quantidadeFer() {
 
       numDigitadoFer = Number(window.document.getElementById("racaoFer").value);
-
-      armazenadoFer = numDigitadoFer + valorFinalFer; 
-
+      armazenadoFer =  numDigitadoFer + valorFinalFer;
       valorFinalFer = armazenadoFer;
-
       window.document.getElementById("qnt1").innerHTML = valorFinalFer;
+      document.getElementById('numeroDigitadoF').innerText = armazenadoFer
 
+      console.log(numDigitadoFer)
+      console.log(armazenadoFer)
+      console.log(valorFinalFer)
      }
 
-     function quantidade(){
+     function quantidadeShe(){
 
       numDigitadoShe = Number(window.document.getElementById("racaoShe").value); 
       armazenadoShe = numDigitadoShe + valorFinalShe;
       valorFinalShe = armazenadoShe;
 
-      window.document.getElementById("qnt2").innerHTML = valorFinalShe
+      window.document.getElementById("qnt2").innerHTML = valorFinalShe;
+      document.getElementById('numeroDigitadoS').innerText = armazenadoShe
 
      }
 
-     function quantidade(){
+     function quantidadeMig(){
 
       numDigitadoMig = Number(window.document.getElementById("racaoMig").value);
       armazenadoMig =  numDigitadoMig + valorFinalMig;
       valorFinalMig = armazenadoMig;
 
       window.document.getElementById("qnt3").innerHTML = valorFinalMig;
+      document.getElementById('numeroDigitadoM').innerText = armazenadoMig
+
+      console.log(numDigitadoMig)
+      console.log(armazenadoMig)
+      console.log(valorFinalMig)
+
 
      }
+
+     function colocar(){
+
+      let colocouMenosFer = 'Fernando';
+      let colocouMenosShe = 'Sheron';
+      let colocouMenosMig = 'Miguel';
+      let colocouMenos = 'Iguais';
+
+      if ( valorFinalFer < valorFinalShe && valorFinalFer < valorFinalMig){
+      console.log('Fernando colocou menos ração')
+      document.getElementById('colocou').innerHTML = 'Fernando';
+    }
+      else if ( valorFinalShe < valorFinalFer && valorFinalShe < valorFinalMig){
+      console.log('Sheron colocou menos ração')
+      document.getElementById('colocou').innerHTML = 'Sheron';
+     }
+     else if ( valorFinalMig < valorFinalFer && valorFinalMig < valorFinalShe){
+      console.log('Miguel colocou menos ração')
+      document.getElementById('colocou').innerHTML = 'Miguel';
+
+     } else { console.log('Valores iguais')
+      document.getElementById('colocou').innerHTML = 'Iguais';
+     }
+
+    }
 
 
 

@@ -25,7 +25,7 @@
     </div>
         <br>
         
-        <form>
+        <form class="form">
             <div>
                 <label for="iquantidadeDeAguaF">Fernando:</label> 
                 <input type="number" id="iquantidadeDeAguaF">
@@ -57,7 +57,7 @@
                <p>Total de litros:</p> 
                 <span id="itotalLitros"></span>
             </div>
-
+            
             <br>
 
     </div>
@@ -95,13 +95,11 @@
         </div>
                 <br>
 
-                <div class="">
+                <div class="valor">
                     <p>Total de Ração:</p> 
                     <span id="itotalRacao"></span>
                     
-                    
                  </div>
-                
                
                 <br>
     </div>
@@ -112,14 +110,13 @@
         
      <div class="foto">
             <img  src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">
-            <!--<img src="imagens/levando-galao.96.png" alt="Camelo com o Galão de Água">-->
         </div>
         <br>
-            <div>
-               <button>Levar o Galão</button>
-               <span id="menorn"></span>
-                <label >Feito!</label>
+                <div>
+            <input type="button" value="Levar Galão" onclick="menorQuantidadeA()">
+               <span id="menorLitro"></span>
             </div>
+
     </div>
     <div class="quarto">
         
@@ -130,11 +127,12 @@
             
         </div>
         <br>
-            <div>
-               <button>Compara a Ração</button>
-               <span id="racao"></span>
-                <label>Pronto!</label>
+            
+                <div>
+            <input type="button" value="Comprar Ração" onclick="menorQuantidadeR()">
+            <span id="menorqnt"></span>
             </div>
+        
     </div>
 </form>
     </main>

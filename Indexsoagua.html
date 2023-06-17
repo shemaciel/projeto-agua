@@ -95,13 +95,16 @@
     <br>
     <span id="uS3"></span>, foi o ultimo saldo;
     </p>
-
+    <p>Quem vai levar o Galão?</p>
+    <input type="button" value="Você" onclick="menor()">
+    <span id="levar"></span>
 </main> 
 <footer><!--roda pé-->
   
 <P>Criado por Sheron</P>
 
 </footer>
+
 <script>
 
 let saldo = 0;
@@ -162,6 +165,35 @@ function enchendoMig() {
   console.log(saldo2)
 
 }
+
+function menor() {
+   let  encheuMenos1 = 'Fernando' 
+   let encheuMenos2 = 'Sheron' 
+   let encheuMenos3 = 'Mihuel' 
+   let encheuIgual = 'Valor Igual' 
+
+  if (saldo < saldo1 &&  saldo < saldo2){
+    console.log('Fernando voce encheu menos')
+    document.getElementById('levar').innerHTML = 'Fernando' 
+  }
+   else if (saldo1 < saldo && saldo1 < saldo2) {
+    console.log('Sheron voce encheu menos')
+    document.getElementById('levar').innerHTML = 'Sheron'
+  }
+   else if (saldo2 < saldo && saldo2 < saldo1) {
+    console.log('Miguel voce encheu menos')
+   document.getElementById('levar').innerHTML = 'Miguel'
+  }
+  else {
+    console.log('valores igual, alguem tera que encher de novo')
+    document.getElementById('levar').innerHTML =  'Valor Igual'
+  }
+
+ 
+}
+
+
+
 
 </script>
 

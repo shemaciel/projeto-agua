@@ -10,6 +10,7 @@
 			#FFFFFF
 			#805959
 			#CCCCCC
+			#898686
 			rgb(28, 240, 28)
 			rgb(10, 124, 10);
 }
@@ -50,7 +51,7 @@ input {
 	float: right
 }
 .valor{
-	background-color:#CCCCCC;
+	background-color:#898686;
 	margin-left: 0%;
 	padding: 5px;
     width: 100%;

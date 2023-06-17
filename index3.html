@@ -1,154 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grade de Notas</title>
 </head>
 <body>
-    <style>
-
-
-        
-        .header,h1 {
-              margin-left: 30%;
-              margin-bottom: 1px;
-              width: 50vw;
-              background-color: black;
-              color: white;
-              text-align: center;
-              font-size: 40px;
-              border-radius: 6px;
-         }
-         
-         .caixa1 {
-          margin-left: 30%;
-          width: 50vw;
-          height: 80px;
-          border-radius: 6px;
-          background-color:rgb(172, 172, 234);
-          
-  
-         }
-         .caixa2 {
-          margin-left: 30%;
-          width: 50vw;
-          height: 80px;
-          border-radius: 6px;
-          background-color:rgb(216, 99, 122);
-       
-  
-  
-         }
-         .caixa3 {
-          margin-left: 30%;
-          width: 50vw;
-          height: 80px;
-          border-radius: 6px;
-          background-color:rgb(164, 216, 216);
-  
-         }
-  
-          h2 {
-              margin-left: 40%;
-              background-color:blue;
-              color: white;
-              text-align: center;
-              font-size: 25px;
-              border-radius: 6px;
-              width: 75px;
-              height: 50px;
-              padding: 10px;
-         }
-  
-         p {
-              margin-left: 50%;
-              background-color:crimson;
-              color: white;
-              text-align: center;
-              font-size: 25px;
-              border-radius: 6px;
-              width: 75px;
-              height: 50px;
-              padding: 10px;
-  
-         }
-         p#quantidade  {
-              
-              background-color:aqua;
-              color: white;
-              text-align: center;
-              font-size: 25px;
-              border-radius: 6px;
-              width: 75px;
-              height: 50px;
-              padding: 10px;
-  
-         } 
-                     
-  
-      </style>
+    <style></style>
       </head>
       <body>
               <header>
-              <h1>Tarefas Diárias</h1> 
+              <h1>Notas do Aluno</h1> 
           </header>
           
           <main>
+
+
+            <p>Notas: </p>
+            <p> A: 90-100 </p>
+            <p> B: 80-89 </p>
+            <p> C: 70-79 </p>
+            <p> D: 60-69 </p>
+            <p> F: abaixo -60  </p>
+            <p>
+                Digite a nota do Aluno:
+                <input type="number" name="nota" id="nota">
+                <input type="button" value="Validar" onclick="validarNota()">
+            </p>
   
-              <div class="caixa1">
-                  
-                  <p id="valor"></p>
-              
-          </div>
-  
-              <div class="caixa2">
-              <h2 id="numero"></h2>
-              
-          </div>
-  
-              <div class="caixa3">
-              <p id="quantidade"></p>
-              <input type="button" value="Somar" onclick="xxx()">
-              <input type="number" id="qnt">
-  
-          </div>
-          
   
   
       </main>
   
               <script>
-                  let quantidadeDeAgua = 0;
-                  let numeroDeAgua = 0;
-                  let quantidade = 0;
-                 let armazenado = 0;
-  
-                  
-                 document.getElementById("numero").innerHTML = numeroDeAgua;
-                 document.getElementById("quantidade").innerHTML = quantidade;
-  
-      function xxx(){
-          
-          let qntInput =  Number(document.getElementById('qnt').value);
-          let res =  qntInput + armazenado;
-          armazenado = res;
-          document.getElementById("valor").innerHTML = res ;
-  
-          
-         
-                     
-                 
-  
-  
-  
-                     
-  
-  
-                     
-                     
-                  }
+
+                   
+
+                   function validarNota(){
+                    let nota =  Number(window.document.getElementById('nota').value) 
+
+                   if(nota > 100 ) {
+                    console.log('Nota invalida')
+                    document.write('Nota invalida')
+                   } 
+                   else if  (nota >= 90) {
+                    console.log('Você é aluno nota A')
+                    window.document.write('Aluno nota A')
+                   }
+                   else if  (nota >= 80){
+                    console.log('Você é aluno nota B')
+                    window.document.write('Aluno nota B')
+                   }
+                   else if  (nota >= 70){
+                    console.log('Você é aluno nota C')
+                    window.document.write('Aluno nota C')
+                   }
+                   else if  (nota >= 60){
+                    console.log('Você é aluno nota D')
+                    window.document.write('Aluno nota D')
+                   }
+                   else {
+                    console.log('Você é aluno nota F')
+                    window.document.write('Aluno nota F, você precisa estudar mais!!')
+                    
+                   }
+                }
+
+                   
+
+
                   
   
               </script>

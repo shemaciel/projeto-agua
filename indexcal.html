@@ -14,20 +14,20 @@
         <p>
             Miguel:
             <input type="number" name="inpLaveiM" id="inpLaveiM">
-           <input type="button" value="lavada" onclick="descobrirM()">
+           <input type="button" value="Mig" onclick="descobrirM()">
             <span id="jaLavadaM"></span>
         </p>
 
         <p>
             Fernando: 
             <input type="number" name="inpLaveiF" id="inpLaveiF">
-            <input type="button" value="lavada" onclick="descobrirF()">
-            <span in="JaLavadaF"></span>
+            <input type="button" value="Fer" onclick="descobrirF()">
+            <span id="jaLavadaF"></span>
         </p>
 
     <script>
         
-        let  restFinalM = 0;
+        let restFinalM = 0;
         let restFinalF = 0;
 
     function descobrirM() {
@@ -44,15 +44,20 @@
     }
 
     function descobrirF() {
+      
+
         inpDigitadoF = Number(window.document.getElementById("inpLaveiF").value);
         numArmazenandoF = inpDigitadoF + restFinalF;
         restFinalF = numArmazenandoF;
+
+        console.log(numArmazenandoF);
+        console.log(restFinalF);
+        console.log(inpDigitadoF);
+
         window.document.getElementById("jaLavadaF").innerHTML = restFinalF
 
     
-        console.log(numArmazenadoF);
-        console.log(restFinalF);
-        console.log(inpDigitadoF);
+       
     }
 
 
